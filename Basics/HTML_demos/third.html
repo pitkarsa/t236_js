@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- internal css  -->
+
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Spirax&display=swap" rel="stylesheet">
+    <style>
+        h1 {
+            color:  rgb(115, 2, 137);
+            /* box model */
+          /*  margin-top: 10px;
+            margin-right:20px;
+            margin-bottom: 30px;
+            margin-left: 40px; */
+            /* margin: 10px 20px 30px 40px; */
+            /* margin: 20px 10px; */
+            margin: 10px;
+            /* border-width: 5px;
+            border-style: dashed;
+            border-color:black; */
+            border: 2px solid red;
+            padding: 8px;
+        }
+        /* div{
+            background-color: grey;
+            border: 2px solid black;
+            height: 100px;
+            width:100px;
+            width:20%;
+            display: inline-block;
+        } */
+
+         /* selectors : tagname- all , id - single element, 
+         class : selecting multiple elements  */
+         #parent {
+                border: 2px solid red;
+                display:flex; /* 1d alignment */
+                flex-wrap: wrap;
+                /* flex-direction: row; */
+         }
+         .child {
+            background-color: grey;
+            border: 2px solid black;
+            height: 100px; 
+            width:200px;
+         }
+         p{
+            font-size: 32px;
+            font-weight: bold;
+            /* font-family: "Dancing Script", cursive;  */
+            text-align: justify; 
+            /* text-decoration: underline;
+            text-decoration-style: wavy; 
+            text-decoration-color: green;          */
+          
+         }
+
+         h2{
+            margin-left: 100px;;
+            font-size:100px;
+            /* text-shadow: x-offset y-offset blur color; */
+            text-shadow: 10px 10px  rgb(50, 49, 49);
+            text-transform : capitalize;
+         }
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- inline style  -->
+    <h1 >Learning css</h1>
+    <h1 >Home</h1>
+    <h1 class="child">Login</h1>
+    <h1 >Register</h1>
+    <h2>Chapter 1 introduction to html</h2>
+    <!-- <p>This is a paragraph Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit eos corrupti obcaecati, quaerat deserunt quasi illum sed fuga quia soluta, accusamus assumenda culpa est? Magnam unde laboriosam animi laborum earum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam unde fugit mollitia quas nobis quibusdam saepe error accusamus, commodi, quasi laborum voluptas doloremque culpa aliquam ad omnis amet sint natus.</p> -->
+
+    <!-- <div id="parent">
+        <div class="child">div 1</div>
+        <div class="child">div 2</div>
+        <div class="child">div 3</div>
+        <div class="child">div 4</div>
+        <div class="child">div 5</div>
+        <div class="child">div 6</div>
+        <div class="child">div 7</div>
+        <div class="child">div 8</div>
+    </div> -->
+    <img src="home.jpg" alt="" width="30%">
+    <video width="200px" controls autoplay muted loop>
+        <source src="video.mp4" type="video/mp4">
+        <source src="video.ogg">
+        <source src="video.hvic">
+        Sorry the video is not available
+    </video>
+    <div class="menu">
+        <div class="items">div1 </div>
+        <div class="items">div 2</div>
+        <div class="items">div3 </div>
+        <div class="items">div 4</div>
+    </div>
+</body>
+</html>

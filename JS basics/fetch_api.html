@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+
+    <script>
+        /*
+AJAX - XHR were used to send the HTTP request to fetch the data from server
+
+fetch(url)
+it is used to send the requset from client to server
+it returns a promise.
+
+if this promise is resolved, 
+the response captured here is a complex object, that holds data(in response body) and other details(status, ...)
+we need to return another promise by calling resp.json(), that extracts the json data from the response body
+
+if this promise is resolved, second then is executed
+
+JSON object
+const stu = {
+    "id":101,
+    "name":"amit"
+}
+*/
+        fetch('https://dummyjson.com/products') // returns a promise
+            .then(resp => {
+                console.log(resp);
+                return resp.json(); // returns another promise
+            })
+            .then(data => {
+                console.log(data);                
+                const allProducts = data.products;
+                console.log(allProducts);
+                // for(let i=0; i< allProducts.length; i++){
+                //     console.log(allProducts[i].title);  
+                // }
+                console.log(allProducts[0].title);                
+            })
+            .catch(err => console.error(err))
+            .finally(() => console.log("fetch completed"));
+    </script>
+</body>
+
+</html>

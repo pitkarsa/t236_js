@@ -1,0 +1,18 @@
+.menu{
+    display: flex;
+    flex-wrap: wrap;
+}
+.items{
+    border: 5px solid ;
+    width:320px;/* content width */
+    height:200px;
+    margin:5px;
+    padding:5px;
+    /* box-sizing: content-width
+     actual box size = content width(320) + (left + right ) padding + border 
+     = 320+20 =340 */ 
+     /* box-sizing: border-box
+     actual box size = width(320) = content + padding+ border 
+     = 320+20 */ 
+   box-sizing: border-box;
+}
